@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Timer App</title>
 </head>
 <body>
-    <h1>
-             Multiple Timer App
-    </h1>
-    <section>
-        <label for="number">Hours :</label>
-        <input class="hours" type="number">
-        <label for="number">Minutes :</label>
-        <input class="input" type="number">
-        <label for="number">Seconds :</label>
-        <input class="input" type="number">
-        <button id ="btn">Start New Timer</button>
-    </section>
-    <div id="lastSection">
-    <button id="black-block">Current Timers</button>
-    <div id ="currentTiming">You have no timers currently</div>
-</div>
-    <script src="./script.js"></script>
+    <h2>Multiple Timer App</h2>
+    <div class="timer-input-section">
+        <label for="hours">Set time:</label>
+        <input type="number" id="hours" placeholder="HH">
+        
+        <label for="minutes">:</label>
+        <input type="number" id="minutes" placeholder="MM">
+        
+        <label for="seconds">:</label>
+        <input type="number" id="seconds" placeholder="SS">
+        
+        <button id="start-timer">Start</button>
+    </div>
+    <div class="active-timers-display" id="timers-container">
+       
+    </div>
+    <audio id="audio-alert" src="alert.mp3"></audio>
+    <script src="timer.js"></script>
+    
+
 </body>
 </html>
